@@ -26,5 +26,8 @@ class AppServiceProvider extends ServiceProvider
         Gate::before(function ($user, $ability) {
             return $user->hasRole('developer') ? true : null;
         });
+        if(config('app.env') === 'Production') {
+            \URL::forceScheme('https');
+        }
     }
 }
