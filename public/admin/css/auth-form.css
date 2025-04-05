@@ -1,0 +1,223 @@
+/* .auth-box {
+    margin: 20px auto 0 !important;
+    max-width: 450px !important;
+}
+
+.login-box {
+    width: auto !important;
+}
+
+body[themebg-pattern=theme1] {
+    background-color: #42a5f5;
+}
+
+body {
+    background-color: #f2f7fb;
+    font-size: .9375rem;
+    overflow-x: hidden;
+    color: #333;
+    font-family: open sans, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 240px, #f2f7fb 0%);
+}
+
+.login-block {
+    margin: 30px auto;
+    min-height: 93.6vh;
+}
+
+.card {
+    border-radius: 5px !important;
+    -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1) !important;
+    box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1) !important;
+    border: none !important;
+    margin-bottom: 30px !important;
+    -webkit-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+}
+
+.card .card-block {
+    padding: 1.25rem;
+}
+
+.d-grid {
+    display: grid !important;
+}
+
+.btn-dribbble:focus,
+.btn-dribbble:hover,
+.btn-dropbox:focus,
+.btn-dropbox:hover,
+.btn-facebook:focus,
+.btn-facebook:hover,
+.btn-flickr:focus,
+.btn-flickr:hover,
+.btn-github:focus,
+.btn-github:hover,
+.btn-google-plus:focus,
+.btn-google-plus:hover,
+.btn-instagram:focus,
+.btn-instagram:hover,
+.btn-linkedin:focus,
+.btn-linkedin:hover,
+.btn-pinterest:focus,
+.btn-pinterest:hover,
+.btn-skype:focus,
+.btn-skype:hover,
+.btn-tumblr:focus,
+.btn-tumblr:hover,
+.btn-twitter:focus,
+.btn-twitter:hover,
+.btn-youtube:focus,
+.btn-youtube:hover {
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-material,
+.form-group {
+    position: relative;
+}
+
+.form-material,
+.form-control {
+    display: inline-block;
+    height: 43px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-material,
+.form-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.form-material,
+.float-label {
+    pointer-events: none !important;
+    position: absolute !important;
+    top: 12px !important;
+    left: 0 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    transition: .2s ease all !important;
+    -moz-transition: .2s ease all !important;
+    -webkit-transition: .2s ease all !important;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.form-control:focus {
+    border-bottom: 3px solid #4099ff
+    
+}
+
+.form-material,
+.form-bar:before {
+    left: 50%;
+}
+
+.form-material,
+.form-bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+}
+
+.form-material,
+.form-bar:after {
+    right: 50%;
+}
+
+.form-material,
+.form-bar:after,
+.form-material .form-bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+}
+
+.txt-primary{
+    font-family: quicksand,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #212529;
+}
+.p-b-5{
+   
+    color: #212529BF !important;
+}
+.m-t-25 {
+    margin-top: 25px;
+}
+.checkbox-fade, .checkbox-zoom {
+    display: inline-block;
+    margin-right: 15px;
+}
+.checkbox-fade label {
+    line-height: 20px;
+}
+.f-w-600 {
+    font-weight: 600;
+}
+a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #37474f;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.m-t-30 {
+    margin-top: 30px;
+}
+.btn-primary{
+    background-color: #4099ff;
+    border-color: #4099ff;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+.btn {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.m-b-20 {
+    margin-bottom: 20px;
+}
+.btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 23px;
+}
+.form-control.fill~.float-label,.form-control.fill~.float-label {
+    top: -14px;
+    font-size: 11px
+} */
