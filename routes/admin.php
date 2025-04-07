@@ -4,12 +4,14 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Auth\PasswordController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ClientLogoController;
 use App\Http\Controllers\Admin\CmsUserController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\NumberController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Admin\TestimonialController;
 
 Route::prefix('admin')->as('admin.')->group(function () {
@@ -43,6 +45,12 @@ Route::prefix('admin')->as('admin.')->group(function () {
         //Testimonials
         Route::resource('testimonials',TestimonialController::class);
         Route::post('testimonials/update-order', [TestimonialController::class,'updateOrder']);
+
+        //Category
+        Route::resource('category',CategoryController::class);
+
+        //Sub Category
+        Route::resource('sub-category',SubCategoryController::class);
 
         // //CMS Users
         // Route::resource('cms-users',CmsUserController::class);

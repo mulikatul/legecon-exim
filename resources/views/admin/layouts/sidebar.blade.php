@@ -43,7 +43,29 @@
                  </li>
                  
                  
-                 
+                 <li class="nav-item">
+                     <a class="nav-link">
+                         <i data-feather="shopping-bag" class="nav-icon feather-icon"></i>
+                         <p class="pcoded-mtext">
+                             Product
+                             <i data-feather="chevron-left" class="sidebar-custom-feather right"></i>
+                         </p>
+                     </a>
+                     <ul class="nav nav-treeview">
+                         <li class="nav-item">
+                             <a href="{{route('admin.category.index')}}" class="nav-link">
+                                 <i data-feather="chevron-right" class="sidebar-custom-feather"></i>
+                                 <p>Product Categories</p>
+                             </a>
+                         </li>
+                         <li class="nav-item">
+                             <a href="{{route('admin.sub-category.index')}}" class="nav-link">
+                                 <i data-feather="chevron-right" class="sidebar-custom-feather"></i>
+                                 <p>Product Sub Categories</p>
+                             </a>
+                         </li>
+                     </ul>
+                 </li>
                  <li class="nav-item">
                      <a href="{{route('admin.testimonials.index')}}" class="nav-link">
                         <i data-feather="message-square" class="nav-icon feather-icon"></i>
