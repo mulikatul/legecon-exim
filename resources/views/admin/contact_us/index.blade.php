@@ -19,6 +19,7 @@ Contact Us
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Phone no</th>
+                                    <th>Subject</th>
                                     <th>Message</th>
                                     <th>Date</th>
                                     <th>Action</th>
@@ -31,6 +32,7 @@ Contact Us
                                         <td>{{$row->name}}</td>
                                         <td>{{$row->email}}</td>
                                         <td>{{$row->phone_no}}</td>
+                                        <td>{{$row->subject}}</td>
                                         <td>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg-{{$row->id}}">
                                                 View
@@ -79,6 +81,7 @@ Contact Us
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Phone no</th>
+                                <th>Subject</th>
                                 <th>Message</th>
                                 <th>Date</th>
                                 <th>Action</th>

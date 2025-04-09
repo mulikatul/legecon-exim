@@ -9,10 +9,10 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="/" class="active">Home<br></a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/" class="">Home<br></a></li>
+                <li><a href="{{route('frontend.about-us')}}" class="">About Us</a></li>
+                <li><a href="#services" class="">Services</a></li>
+                <li><a href="{{route('frontend.contact-us')}}" class="">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

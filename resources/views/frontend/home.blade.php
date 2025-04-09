@@ -22,36 +22,7 @@
 
 </section><!-- /Hero Section -->
 
-<!-- About Section -->
-<section id="about" class="about section">
 
-    <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="content">
-                    <h3>Who We Are</h3>
-                    <h2>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h2>
-                    <p>
-                        Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
-                    </p>
-                    <div class="text-center text-lg-start">
-                        <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                            <span>Read More</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                <img src="{{asset('frontend/assets/img/about.jpg')}}" class="img-fluid" alt="">
-            </div>
-
-        </div>
-    </div>
-
-</section><!-- /About Section -->
 
 <!-- Values Section -->
 <section id="values" class="values section">
@@ -911,99 +882,5 @@
 </section><!-- /Clients Section -->
 
 
-
-<!-- Contact Section -->
-<section id="contact" class="contact section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-6">
-
-                <div class="row gy-4">
-                    <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="200">
-                            <i class="bi bi-geo-alt"></i>
-                            <h3>Address</h3>
-                            <p>A108 Adam Street</p>
-                            <p>New York, NY 535022</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="300">
-                            <i class="bi bi-telephone"></i>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                            <p>+1 6678 254445 41</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="400">
-                            <i class="bi bi-envelope"></i>
-                            <h3>Email Us</h3>
-                            <p>info@example.com</p>
-                            <p>contact@example.com</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="500">
-                            <i class="bi bi-clock"></i>
-                            <h3>Open Hours</h3>
-                            <p>Monday - Friday</p>
-                            <p>9:00AM - 05:00PM</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                    <div class="row gy-4">
-
-                        <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                        </div>
-
-                        <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                        </div>
-
-                        <div class="col-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                        </div>
-
-                        <div class="col-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                        </div>
-
-                        <div class="col-12 text-center">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                            <button type="submit">Send Message</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div><!-- End Contact Form -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Contact Section -->
 
 @endsection

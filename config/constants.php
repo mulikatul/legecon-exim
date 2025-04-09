@@ -34,5 +34,7 @@ return [
  
     'mail' => [
         'mailAuthFrom' => env('AUTH_MAIL_FROM_ADMIN', 'noreply@gmail.com'),
+        'noReply' => env('NO_REPLY', 'noreply@gmail.com'),
+        'contactUsNotificationToAdmin' => env('CONTACT_US_NOTIFICATION_TO_ADMIN', 'no-reply@gmail.com'),
     ],
 ];
