@@ -23,7 +23,7 @@ class CategoryFormRequest extends FormRequest
     {
         $id = $this->route('category');
         $rules = [
-            'category_name'        => "required|unique:categories,category_name,$id",
+            'category_name' => 'required|unique:categories,category_name,' . $id . ',id',
         ];
         return $rules;
     }
