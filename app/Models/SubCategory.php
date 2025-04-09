@@ -13,8 +13,12 @@ class SubCategory extends Model
         'status',
     ];
 
-    public function Category()
+    public function category()
     {
         return $this->belongsTo('App\Models\Category'); 
+    }
+    public function products()
+    {
+        return $this->hasMany('App\Models\Products'); 
     }
 }

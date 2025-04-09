@@ -7,7 +7,7 @@ return [
     */
 
     'uploads' => [
-        'blogs'                 => 'uploads/blogs',
+        'product'                 => 'uploads/product',
         'client_logo'           => 'uploads/client_logo',
         'testimonial'           => 'uploads/testimonial',
     ],
