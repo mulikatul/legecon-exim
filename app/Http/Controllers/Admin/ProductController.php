@@ -87,6 +87,7 @@ class ProductController extends AdminBaseController
         $product->sub_category_id  = $data->sub_category_id;
         $product->title  = $data->title;
         $product->slug  = $data->slug;
+        $product->price  = $data->price;
         $product->buy_link  = $data->buy_link;
         $product->meta_title  = $data->meta_title;
         $product->meta_description  = $data->meta_description;

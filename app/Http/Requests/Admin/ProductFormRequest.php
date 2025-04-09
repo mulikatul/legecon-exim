@@ -28,6 +28,7 @@ class ProductFormRequest extends FormRequest
             'buy_link'   => 'required',
             'title'   => "required|unique:products,title,$id",
             'meta_title'   => 'required',
+            'price'   => 'required',
             'meta_description'   => 'required',
             'description'   => 'required',
             'slug'        => "required|unique:products,slug,$id",

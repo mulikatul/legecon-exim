@@ -84,6 +84,15 @@ Product
                                 </div>
                             </div>
                             <div class="row mb-3">
+                                <label class="form-label col-sm-2 col-form-label">Price</label>
+                                <div class="col-sm-10">
+                                    <input type="number" name="price" class="form-control" id="buy_link" placeholder="Enter price" value="{{old('price')}}">
+                                    @error('price')
+                                        <span class="field-error">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="row mb-3">
                                 <label class="form-label col-sm-2 col-form-label">Buy Link</label>
                                 <div class="col-sm-10">
                                     <input type="text" name="buy_link" class="form-control" id="buy_link" placeholder="Enter buy link" value="{{old('buy_link')}}">
