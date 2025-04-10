@@ -26,12 +26,12 @@ class ProductFormRequest extends FormRequest
             'category_id'   => 'required',
             'sub_category_id'   => 'required',
             'buy_link'   => 'required',
-            'title'   => "required|unique:products,title,$id",
+            'title'   => $id ? 'required|unique:products,title,' . $id . ',id': 'required|unique:products,title',
             'meta_title'   => 'required',
             'price'   => 'required',
             'meta_description'   => 'required',
             'description'   => 'required',
-            'slug'        => "required|unique:products,slug,$id",
+            'slug'        => $id ? 'required|unique:products,slug,' . $id . ',id': 'required|unique:products,slug',
         ];
         return $rules;
     }
