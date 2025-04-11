@@ -1,9 +1,21 @@
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Legecon Exim</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    @section('meta-tags')
+    @show
+    <meta name="Description" content="@yield('description')">
+    <meta property="og:title" content="@yield('title')" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="image" />
+    <meta property="og:description" content="@yield('description')" />
+    <meta property="og:site_name" content="Lila Global" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>@yield('title')| Legecon Exim</title>
+    <link rel="icon" type="image/png" href="{{ asset('frontend/images/lila_favicon.png')}}" />
+    <link rel="canonical" href="{{ url()->current() }}" />
+    @yield('canonical')
 
   <!-- Favicons -->
   <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">

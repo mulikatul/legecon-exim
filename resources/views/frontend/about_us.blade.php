@@ -1,5 +1,6 @@
 @extends('frontend.layouts.app')
-
+@section('title')About Us @endsection
+@section('description')About Us @endsection
 @section('main-content')
 <!-- About Section -->
 <section id="about" class="about section">

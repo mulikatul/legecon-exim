@@ -1,5 +1,6 @@
 @extends('frontend.layouts.app')
-
+@section('title') Home Page @endsection
+@section('description') Home Page @endsection
 @section('main-content')
 <!-- Hero Section -->
 <section id="hero" class="hero section">

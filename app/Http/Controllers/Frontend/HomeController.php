@@ -16,4 +16,13 @@ class HomeController extends Controller
     {
         return view('frontend.about_us');
     }
+    public function sitemap()
+    {
+        return view('frontend.sitemap');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('frontend.privacy_policy');
+    }
 }

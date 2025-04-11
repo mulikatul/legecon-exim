@@ -11,13 +11,13 @@
             <ul>
                 <li><a href="/" class="">Home<br></a></li>
                 <li><a href="{{route('frontend.about-us')}}" class="">About Us</a></li>
-                <li><a href="#services" class="">Services</a></li>
+                <li><a href="#" class="">Products</a></li>
                 <li><a href="{{route('frontend.contact-us')}}" class="">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Get Started</a>
+        <a class="btn-getstarted flex-md-shrink-0" href="{{route('frontend.contact-us')}}">Get Started</a>
 
     </div>
 </header>

@@ -1,5 +1,6 @@
 @extends('frontend.layouts.app')
-
+@section('title')Contact Us @endsection
+@section('description')Contact Us @endsection
 @section('main-content')
 <!-- Contact Section -->
 <section id="contact" class="contact section mt-5">
