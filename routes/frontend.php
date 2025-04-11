@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Frontend\ContactUsController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ProductController;
 use App\Http\Controllers\Frontend\SitemapController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +23,8 @@ Route::as('frontend.')->group(function () {
     Route::controller(ContactUsController::class)->group(function () {
         Route::get('/contact-us',  'index')->name('contact-us');
         Route::post('/store/contact-us',  'storeContactUs')->name('store-contact-us');
+    });
+    Route::controller(ProductController::class)->group(function () {
+        Route::get('/products',  'index')->name('product');
     });
 });

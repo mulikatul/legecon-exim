@@ -11,7 +11,7 @@
             <ul>
                 <li><a href="/" class="">Home<br></a></li>
                 <li><a href="{{route('frontend.about-us')}}" class="">About Us</a></li>
-                <li><a href="#" class="">Products</a></li>
+                <li><a href="{{route('frontend.product')}}" class="">Products</a></li>
                 <li><a href="{{route('frontend.contact-us')}}" class="">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

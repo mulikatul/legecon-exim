@@ -2807,3 +2807,8 @@ section,
 .cookie-container.active {
   transform: translateY(0);
 }
+.product-search button{
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 0;
+}
