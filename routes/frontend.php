@@ -26,5 +26,6 @@ Route::as('frontend.')->group(function () {
     });
     Route::controller(ProductController::class)->group(function () {
         Route::get('/products',  'index')->name('product');
+        Route::get('/product/{slug}',  'productDetail')->name('product-detail');
     });
 });

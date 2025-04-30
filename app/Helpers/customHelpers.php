@@ -12,7 +12,15 @@ if (!function_exists('base_url')) {
         return URL::to('/');
     }
 }
+if (!function_exists('short_text')) {
+    function short_text($content, $no_of_chars, $end_str="...")
+    {    	
+    	
+       //return strlen($content) <= $no_of_chars ? $content : substr($content, 0, $no_of_chars) . $end_str;
 
+       return strlen($content) <= $no_of_chars ? $content : substr($content, 0, stripos($content . ' ', ' ', $no_of_chars)) . $end_str;     	
+    }
+}
 // if (!function_exists('media_upload_compress')) {
 //     function media_upload_compress($file, $path, $file_prefix = null)
 //     {

@@ -15,6 +15,8 @@
 <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 <script src="{{asset('frontend/assets/js/cookiealert.js')}}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+@section('script')
+@show
 <script type="text/javascript">
 
 var getNormalUrl = function(url) {
