@@ -88,7 +88,22 @@
                      </p>
                  </a>
              </li>
-
+             <li class="nav-item">
+                 <a href="{{route('admin.numbers.index')}}" class="nav-link">
+                     <i data-feather="list" class="nav-icon feather-icon"></i>
+                     <p>
+                         Numbers
+                     </p>
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="{{route('admin.client-logo.index')}}" class="nav-link">
+                     <i data-feather="image" class="nav-icon feather-icon"></i>
+                     <p>
+                         Client Logos
+                     </p>
+                 </a>
+             </li>
              {{--@canany(['admin_users.view','roles.view','permissions.view'])
                  <li class="nav-item">
                      <a class="nav-link">

@@ -21,4 +21,9 @@ class SubCategory extends Model
     {
         return $this->hasMany('App\Models\Products'); 
     }
+
+    public function scopeStatus($query, $type)
+    {
+        return $query->where('status', $type);
+    }
 }

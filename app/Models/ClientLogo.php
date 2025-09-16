@@ -4,16 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Testimonial extends Model
+class ClientLogo extends Model
 {
-    protected $table = 'testimonials';
+    protected $table = 'client_logos';
     protected $fillable = [
         'client_name',
-        'company_name',
+        'status',
         'alt_text',
-        'description',
-        'position',
-        'status'
+        'logo_image',
+        'position'
     ];
 
     public function scopePosition($query, $order)

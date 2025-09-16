@@ -65,7 +65,13 @@ Route::prefix('admin')->as('admin.')->group(function () {
             Route::post('product/update-gallery','mediaUpdate')->name('update-gallery');
             Route::post('product/gallery-delete','deleteGallery')->name('delete-gallery');
         });
-        
+
+        //Client Logo
+        Route::resource('client-logo',ClientLogoController::class);
+        Route::post('client-logo/update-order', [ClientLogoController::class,'updateOrder']);
+
+        //Numbers
+        Route::resource('numbers',NumberController::class);
 
         // //CMS Users
         // Route::resource('cms-users',CmsUserController::class);

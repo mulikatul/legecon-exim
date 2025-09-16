@@ -11,7 +11,7 @@
                 <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
                 <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
                 <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-                    <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{route('frontend.product')}}" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
                     <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                 </div>
             </div>
@@ -79,8 +79,8 @@
                 <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Happy Clients</p>
+                        <span data-purecounter-start="0" data-purecounter-end="{{$numbers->firstWhere('slug', 'happy_clients')['number']}}" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>{{$numbers->firstWhere('slug', 'happy_clients')['name']}}</p>
                     </div>
                 </div>
             </div><!-- End Stats Item -->
@@ -89,13 +89,13 @@
                 <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="bi bi-journal-richtext color-orange flex-shrink-0" style="color: #ee6c20;"></i>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Projects</p>
+                        <span data-purecounter-start="0" data-purecounter-end="{{$numbers->firstWhere('slug', 'project')['number']}}" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>{{$numbers->firstWhere('slug', 'project')['name']}}</p>
                     </div>
                 </div>
             </div><!-- End Stats Item -->
 
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
                 <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="bi bi-headset color-green flex-shrink-0" style="color: #15be56;"></i>
                     <div>
@@ -103,14 +103,14 @@
                         <p>Hours Of Support</p>
                     </div>
                 </div>
-            </div><!-- End Stats Item -->
+            </div>End Stats Item -->
 
             <div class="col-lg-3 col-md-6">
                 <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="bi bi-people color-pink flex-shrink-0" style="color: #bb0852;"></i>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Hard Workers</p>
+                        <span data-purecounter-start="0" data-purecounter-end="{{$numbers->firstWhere('slug', 'hard_worker')['number']}}" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>{{$numbers->firstWhere('slug', 'hard_worker')['name']}}</p>
                     </div>
                 </div>
             </div><!-- End Stats Item -->
@@ -120,7 +120,7 @@
     </div>
 
 </section><!-- /Stats Section -->
-
+{{--
 <!-- Features Section -->
 <section id="features" class="features section">
 
@@ -190,8 +190,8 @@
 
     </div>
 
-</section><!-- /Features Section -->
-
+</section><!-- /Features Section -->--}}
+{{-- 
 <!-- Alt Features Section -->
 <section id="alt-features" class="alt-features section">
 
@@ -264,7 +264,7 @@
     </div>
 
 </section><!-- /Alt Features Section -->
-
+--}}
 <!-- Services Section -->
 <section id="services" class="services section">
 
@@ -422,7 +422,7 @@
     </div>
 
 </section><!-- /Faq Section -->
-
+{{--
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section">
 
@@ -596,8 +596,9 @@
 
     </div>
 
-</section><!-- /Portfolio Section -->
+</section><!-- /Portfolio Section -->--}}
 
+@if(count($testimonials)>0)
 <!-- Testimonials Section -->
 <section id="testimonials" class="testimonials section">
 
@@ -636,23 +637,24 @@
                 }
             </script>
             <div class="swiper-wrapper">
-
+                @foreach($testimonials as $testimonial)
                 <div class="swiper-slide">
                     <div class="testimonial-item">
                         <div class="stars">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            {{$testimonial->description}}
                         </p>
                         <div class="profile mt-auto">
-                            <img src="{{asset('frontend/assets/img/testimonials/testimonials-1.jpg')}}" class="testimonial-img" alt="">
-                            <h3>Saul Goodman</h3>
-                            <h4>Ceo &amp; Founder</h4>
+                            <!-- <img src="{{asset('frontend/assets/img/testimonials/testimonials-1.jpg')}}" class="testimonial-img" alt=""> -->
+                            <h3>{{$testimonial->client_name}}</h3>
+                            <h4>{{$testimonial->company_name}}</h4>
                         </div>
                     </div>
                 </div><!-- End testimonial item -->
-
+                @endforeach
+                {{--
                 <div class="swiper-slide">
                     <div class="testimonial-item">
                         <div class="stars">
@@ -715,7 +717,7 @@
                             <h4>Entrepreneur</h4>
                         </div>
                     </div>
-                </div><!-- End testimonial item -->
+                </div><!-- End testimonial item -->--}}
 
             </div>
             <div class="swiper-pagination"></div>
@@ -724,6 +726,7 @@
     </div>
 
 </section><!-- /Testimonials Section -->
+@endif
 
 <!-- Team Section -->
 <section id="team" class="team section">
@@ -819,7 +822,7 @@
     </div>
 
 </section><!-- /Team Section -->
-
+@if(count($clients)>0)
 <!-- Clients Section -->
 <section id="clients" class="clients section">
 
@@ -834,7 +837,7 @@
         <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
                 {
-                    "loop": true,
+                    "loop": false,
                     "speed": 600,
                     "autoplay": {
                         "delay": 5000
@@ -866,14 +869,16 @@
                 }
             </script>
             <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-1.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
+                @foreach($clients as $client)
+                    <div class="swiper-slide"><img src="{{asset($client->logo_image)}}" class="img-fluid" alt="{{$client->alt_text}}"></div>
+                @endforeach
+                    <!-- <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-3.png')}}" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-4.png')}}" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-5.png')}}" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-6.png')}}" class="img-fluid" alt=""></div>
                 <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-7.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-8.png')}}" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-8.png')}}" class="img-fluid" alt=""></div> -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -881,7 +886,7 @@
     </div>
 
 </section><!-- /Clients Section -->
-
+@endif
 
 
 @endsection

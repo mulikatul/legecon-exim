@@ -53,6 +53,7 @@
                                     <li class="d-flex align-items-center"><i class="bi bi-list-ul"></i> <a href="#">{{optional($product->category)->category_name}}</a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-diagram-3"></i> <a href="#">{{optional($product->subCategory)->sub_category_name}}</a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-cart-check"></i> <a href="{{$product->buy_link}}" target="_blank"><u><b>Buy Link</b></u></a></li>
+                                    <li class="d-flex align-items-center"><i class="bi bi-tag"></i> <b>Starting From &nbsp;</b> <u>{{$product->price}}</u>/-</li>
                                 </ul>
                             </div><!-- End meta top -->
 
