@@ -14,7 +14,8 @@
         "proengsoft/laravel-jsvalidation": "^4.9",
         "realrashid/sweet-alert": "^7.3",
         "spatie/laravel-backup": "^9.2",
-        "spatie/laravel-permission": "^6.15"
+        "spatie/laravel-permission": "^6.15",
+        "ext-gd": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
