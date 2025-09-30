@@ -17,7 +17,7 @@
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted flex-md-shrink-0" href="{{route('frontend.contact-us')}}">Get Started</a>
+        <!-- <a class="btn-getstarted flex-md-shrink-0" href="{{route('frontend.contact-us')}}">Get Started</a> -->
 
     </div>
 </header>

@@ -8,10 +8,10 @@
     <div class="container">
         <div class="row gy-4">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-                <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
-                <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-                    <a href="{{route('frontend.product')}}" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+                <h1 data-aos="fade-up mb-2">Empowering Industries with Smart Automation Solutions</h1>
+                {{--<p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>--}}
+                <div class="d-flex flex-column flex-md-row mt-5" data-aos="fade-up" data-aos-delay="200">
+                    <a href="{{route('frontend.product')}}" class="btn-get-started">Business Verticles <i class="bi bi-arrow-right"></i></a>
                     <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                 </div>
             </div>
@@ -23,57 +23,12 @@
 
 </section><!-- /Hero Section -->
 
-
-
-<!-- Values Section -->
-<section id="values" class="values section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Our Values</h2>
-        <p>What we value most<br></p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-1.png')}}" class="img-fluid" alt="">
-                    <h3>Ad cupiditate sed est odio</h3>
-                    <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-2.png')}}" class="img-fluid" alt="">
-                    <h3>Voluptatem voluptatum alias</h3>
-                    <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-3.png')}}" class="img-fluid" alt="">
-                    <h3>Fugit cupiditate alias nobis.</h3>
-                    <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Values Section -->
-
 <!-- Stats Section -->
 <section id="stats" class="stats section">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-4 d-flex justify-content-evenly">
 
             <div class="col-lg-3 col-md-6">
                 <div class="stats-item d-flex align-items-center w-100 h-100">
@@ -120,6 +75,74 @@
     </div>
 
 </section><!-- /Stats Section -->
+
+<!-- Values Section -->
+<section id="values" class="values section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Our Values</h2>
+        <p>What we value most<br></p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <img src="{{asset('frontend/assets/img/values-1.png')}}" class="img-fluid" alt="">
+                    <h3>Innovation</h3>
+                    <p>We continuously adapt and implement cutting-edge technologies to provide advanced automation solutions that keep our clients ahead of the competition.</p>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <img src="{{asset('frontend/assets/img/values-2.png')}}" class="img-fluid" alt="">
+                    <h3>Integrity</h3>
+                    <p>We believe in honest, transparent, and ethical business practices to build long-term trust with our customers and partners.</p>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <img src="{{asset('frontend/assets/img/values-3.png')}}" class="img-fluid" alt="">
+                    <h3>Customer - Centric Aproach</h3>
+                    <p>Every project is designed around the unique needs of our clients, ensuring tailor-made solutions that drive efficiency and success.</p>
+                </div>
+            </div><!-- End Card Item -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <img src="{{asset('frontend/assets/img/values-1.png')}}" class="img-fluid" alt="">
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in everything we do—from product quality to project execution and after-sales support.</p>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <img src="{{asset('frontend/assets/img/values-2.png')}}" class="img-fluid" alt="">
+                    <h3>Sustainability</h3>
+                    <p>Our automation solutions are designed to optimize energy usage, reduce wastage, and support industries in achieving greener operations.</p>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <img src="{{asset('frontend/assets/img/values-3.png')}}" class="img-fluid" alt="">
+                    <h3>Collaboration</h3>
+                    <p>Our automation solutions are designed to optimize energy usage, reduce wastage, and support industries in achieving greener operations.</p>
+                </div>
+            </div><!-- End Card Item -->
+
+        </div>
+
+    </div>
+
+</section><!-- /Values Section -->
+
+
 {{--
 <!-- Features Section -->
 <section id="features" class="features section">
@@ -271,7 +294,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Check Our Services<br></p>
+        <p>Our Services<br></p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -280,55 +303,55 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item item-cyan position-relative">
-                    <i class="bi bi-activity icon"></i>
-                    <h3>Nesciunt Mete</h3>
-                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                    <i class="bi bi-diagram-3 icon"></i>
+                    <h3>Turnkey Automation Projects</h3>
+                    <p>Complete project execution from concept, design, and engineering to installation, commissioning, and support.</p>
+                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-item item-orange position-relative">
                     <i class="bi bi-broadcast icon"></i>
-                    <h3>Eosle Commodi</h3>
-                    <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                    <h3>SCADA System Development</h3>
+                    <p>Custom Web-SCADA and centralized monitoring solutions for real-time data visualization, control, and reporting.</p>
+                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-item item-teal position-relative">
-                    <i class="bi bi-easel icon"></i>
-                    <h3>Ledo Markt</h3>
-                    <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                    <i class="bi bi-pc-display icon"></i>
+                    <h3>PLC & HMI Programming</h3>
+                    <p>Design and programming of PLCs and HMIs tailored to your processes for seamless automation and control.</p>
+                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-item item-red position-relative">
-                    <i class="bi bi-bounding-box-circles icon"></i>
-                    <h3>Asperiores Commodi</h3>
-                    <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                    <i class="bi bi-bar-chart-line icon"></i>
+                    <h3>IIoT Integration</h3>
+                    <p>Smart Industrial IoT integration, remote monitoring, predictive maintenance, and digital twin modeling.</p>
+                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="service-item item-indigo position-relative">
-                    <i class="bi bi-calendar4-week icon"></i>
-                    <h3>Velit Doloremque.</h3>
-                    <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                    <i class="bi bi-lightning-charge icon"></i>
+                    <h3>VFD & Motor Control Solutions</h3>
+                    <p>Supply, installation, and maintenance of high-performance VFD drives, soft starters, and shaft power monitors.</p>
+                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div><!-- End Service Item -->
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                 <div class="service-item item-pink position-relative">
-                    <i class="bi bi-chat-square-text icon"></i>
-                    <h3>Dolori Architecto</h3>
-                    <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                    <i class="bi bi-tools icon"></i>
+                    <h3>Maintenance & Support</h3>
+                    <p>Reliable after-sales support, system upgrades, troubleshooting, and training to ensure smooth operations.</p>
+                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
                 </div>
             </div><!-- End Service Item -->
 
@@ -728,100 +751,7 @@
 </section><!-- /Testimonials Section -->
 @endif
 
-<!-- Team Section -->
-<section id="team" class="team section">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Our hard working team</p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="{{asset('frontend/assets/img/team/team-1.jpg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                            <a href=""><i class="bi bi-twitter-x"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>Walter White</h4>
-                        <span>Chief Executive Officer</span>
-                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-                    </div>
-                </div>
-            </div><!-- End Team Member -->
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="{{asset('frontend/assets/img/team/team-2.jpg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                            <a href=""><i class="bi bi-twitter-x"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>Sarah Jhonson</h4>
-                        <span>Product Manager</span>
-                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-                    </div>
-                </div>
-            </div><!-- End Team Member -->
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="{{asset('frontend/assets/img/team/team-3.jpg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                            <a href=""><i class="bi bi-twitter-x"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>William Anderson</h4>
-                        <span>CTO</span>
-                        <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
-                    </div>
-                </div>
-            </div><!-- End Team Member -->
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="{{asset('frontend/assets/img/team/team-4.jpg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                            <a href=""><i class="bi bi-twitter-x"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>Amanda Jepson</h4>
-                        <span>Accountant</span>
-                        <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
-                    </div>
-                </div>
-            </div><!-- End Team Member -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Team Section -->
 @if(count($clients)>0)
 <!-- Clients Section -->
 <section id="clients" class="clients section">

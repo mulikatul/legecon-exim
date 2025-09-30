@@ -6,7 +6,7 @@
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
         <a href="index.html" class="d-flex align-items-center">
-          <span class="sitename">Legecon Lexim</span>
+          <span class="sitename">Legecon Exim</span>
         </a>
         <div class="footer-contact pt-3">
           <p>A108 Adam Street</p>
@@ -37,7 +37,7 @@
 
       <div class="col-lg-4 col-md-12">
         <h4>Follow Us</h4>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
         <div class="social-links d-flex">
           <a href=""><i class="bi bi-twitter-x"></i></a>
           <a href=""><i class="bi bi-facebook"></i></a>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">Legecon Lexim</strong> <span>All Rights Reserved</span></p>
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Legecon Exim</strong> <span>All Rights Reserved</span></p>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you've purchased the pro version. -->

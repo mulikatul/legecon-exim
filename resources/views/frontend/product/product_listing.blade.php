@@ -30,7 +30,7 @@
                 </div>
                 @empty
                 <div class="col-12 text-center">
-                    <p>No products found.</p>
+                    <p>Comming Soon.</p>
                 </div>
                 @endforelse
             </div>
