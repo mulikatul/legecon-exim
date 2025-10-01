@@ -24,7 +24,8 @@ class ContactUsFormRequest extends FormRequest
         $rules = [
             'name'            => 'required',
             'email'                 => 'required|email',
-            'subject'               => 'required',
+            'company'           =>'required',
+            'location'               => 'required',
             'phone_no'              => 'required',
             'message'               => 'required',
             'g-recaptcha-response'  => 'required|captcha',

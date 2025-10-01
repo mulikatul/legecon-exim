@@ -43,7 +43,8 @@ class ContactUsNotificationToAdmin extends Notification
             ->line('Name : ' . $this->data['name'])
             ->line('Email : ' . $this->data['email'])
             ->line('Phone No : ' . $this->data['phone_no'])
-            ->line('Subject : ' . $this->data['subject'])
+            ->line('Company : ' . $this->data['company'])
+            ->line('Location : ' . $this->data['location'])
             ->line('Message : ' . $this->data['message']);
     }
 

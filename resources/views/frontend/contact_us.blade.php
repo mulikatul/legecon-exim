@@ -1,6 +1,13 @@
 @extends('frontend.layouts.app')
 @section('title')Contact Us @endsection
 @section('description')Contact Us @endsection
+@section('head-section')
+<style>
+    .contact-card{
+        height: 250px;
+    }
+</style>
+@endsection
 @section('main-content')
 <!-- Contact Section -->
 <section id="contact" class="contact section mt-5">
@@ -19,38 +26,38 @@
 
                 <div class="row gy-4">
                     <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="200">
+                        <div class="info-item contact-card" data-aos="fade" data-aos-delay="200">
                             <i class="bi bi-geo-alt"></i>
                             <h3>Address</h3>
-                            <p>A108 Adam Street</p>
-                            <p>New York, NY 535022</p>
+                            <p>Block No. 108, Building No. 9,
+                            Lokmanya Nagar, Sadashiv Peth,
+                            Pune - 411030 , Maharashtra, India</p>
                         </div>
                     </div><!-- End Info Item -->
 
                     <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="300">
+                        <div class="info-item contact-card" data-aos="fade" data-aos-delay="300">
                             <i class="bi bi-telephone"></i>
                             <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                            <p>+1 6678 254445 41</p>
+                            <p>+91 70208 93551</p>
+                            <p>+91 20 2999 1103</p>
                         </div>
                     </div><!-- End Info Item -->
 
                     <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="400">
+                        <div class="info-item contact-card" data-aos="fade" data-aos-delay="400">
                             <i class="bi bi-envelope"></i>
                             <h3>Email Us</h3>
-                            <p>info@example.com</p>
-                            <p>contact@example.com</p>
+                            <p><a href="mailto:legeconeximpvtltd@gmail.com">legeconeximpvtltd@gmail.com</a></p>
                         </div>
                     </div><!-- End Info Item -->
 
                     <div class="col-md-6">
-                        <div class="info-item" data-aos="fade" data-aos-delay="500">
+                        <div class="info-item contact-card" data-aos="fade" data-aos-delay="500">
                             <i class="bi bi-clock"></i>
                             <h3>Open Hours</h3>
-                            <p>Monday - Friday</p>
-                            <p>9:00AM - 05:00PM</p>
+                            <p>Monday - Saturday</p>
+                            <p>10:00 Am - 6:30 Pm</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -84,8 +91,16 @@
                         </div>
                         <div class="col-12">
                             
-                            <input type="text" class="form-control" name="subject" id="inputEmail4" value="{{old('subject')}}" placeholder="Enter subject" required>
-                            @error('subject')
+                            <input type="text" class="form-control" name="company" id="inputEmail4" value="{{old('company')}}" placeholder="Enter company" required>
+                            @error('company')
+                            <span style="color:red"><small>{{ $message }}</small></span>
+                            @enderror
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <input type="text" class="form-control" name="location" id="inputEmail4" value="{{old('location')}}" placeholder="Enter location" required>
+                            @error('location')
                             <span style="color:red"><small>{{ $message }}</small></span>
                             @enderror
                         </div>

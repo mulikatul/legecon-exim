@@ -18,7 +18,15 @@ class ContactUsController extends Controller
     public function storeContactUs(ContactUsFormRequest $request)
     {
         // dd($request->all());
-        ContactUs::create($request->all());
+        $contact = new ContactUs();
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->company = $request->company;
+        $contact->location = $request->location;
+        $contact->phone_no = $request->phone_no;
+        $contact->message = $request->message;
+        $contact->save();
+
         Notification::route('mail', config( 'constants.mail.contactUsNotificationToAdmin' ))->notify(new ContactUsNotificationToAdmin($request->all())); 
         alert()->success('Success!','Thank You For Contacting us, we will get back to you soon!');
         return redirect()->back();

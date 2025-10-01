@@ -49,7 +49,7 @@
 
                     <div class="row align-self-center gy-5 d-flex justify-content-evenly">
 
-                        <div class="col-md-3 icon-box d-flex flex-column text-center content value">
+                        <div class="col-md-5 icon-box d-flex flex-column text-center content value">
                             <i class="bi bi-bullseye mb-2"></i>
                             <div>
                                 <h4>Our Mission</h4>
@@ -57,7 +57,7 @@
                             </div>
                         </div><!-- End Feature Item -->
 
-                        <div class="col-md-3 icon-box d-flex flex-column text-center content value">
+                        <div class="col-md-5 icon-box d-flex flex-column text-center content value">
                             <i class="bi bi-graph-up-arrow mb-2"></i>
                             <div>
                                 <h4>Our Vision</h4>
@@ -65,14 +65,14 @@
                             </div>
                         </div><!-- End Feature Item -->
 
-                        <div class="col-md-5 icon-box d-flex flex-column text-center content value">
+                        <div class="col-md-8 icon-box d-flex flex-column text-center content value">
                             <i class="bi bi-shield-check mb-2"></i>
                             <div>
                                 <h4>Our Strength</h4>
-                                <p style="text-align: justify;">Decades of combined experience in industrial automation
-                                    Strong partnerships with global technology leaders
-                                    Proven track record in turnkey projects and custom SCADA/PLC solutions
-                                    Expertise across industries: Pharmaceutical, Water Treatment, Oil & Gas, Automotive, Solar, Food & Beverage, Packaging, OEM, and more
+                                <p style="text-align: -webkit-match-parent;">Decades of combined experience in industrial automation <br/>
+                                    Strong partnerships with global technology leaders<br/>
+                                    Proven track record in turnkey projects and custom SCADA/PLC solutions<br/>
+                                    Expertise across industries: Pharmaceutical, Water Treatment, Oil & Gas, Automotive, Solar, Food & Beverage, Packaging, OEM, and more<br/>
                                     Commitment to Industry 4.0 transformation through IIoT, predictive maintenance, and digital twin technologies</p>
                             </div>
                         </div><!-- End Feature Item -->
