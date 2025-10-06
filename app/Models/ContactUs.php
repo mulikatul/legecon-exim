@@ -14,5 +14,6 @@ class ContactUs extends Model
         'location',
         'message',
         'company',
+        'country_code'
     ];
 }

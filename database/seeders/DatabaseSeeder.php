@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(CountryInfo::class);
         $this->call(NumberSeeder::class);
         // User::factory(10)->create();
 

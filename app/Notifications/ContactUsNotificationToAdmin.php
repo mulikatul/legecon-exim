@@ -42,9 +42,9 @@ class ContactUsNotificationToAdmin extends Notification
             ->line('Here are the details:')
             ->line('Name : ' . $this->data['name'])
             ->line('Email : ' . $this->data['email'])
-            ->line('Phone No : ' . $this->data['phone_no'])
+            ->line('Phone No : '.$this->data['country_code'].' ' . $this->data['phone_no'])
             ->line('Company : ' . $this->data['company'])
-            ->line('Location : ' . $this->data['location'])
+            ->line('City : ' . $this->data['location'])
             ->line('Message : ' . $this->data['message']);
     }
 

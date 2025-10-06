@@ -8,18 +8,18 @@
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:image" content="image" />
+    <meta property="og:image" content="{{ asset('frontend/assets/img/company-logo.png')}}" />
     <meta property="og:description" content="@yield('description')" />
     <meta property="og:site_name" content="Lila Global" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')| Legecon Exim</title>
-    <link rel="icon" type="image/png" href="{{ asset('frontend/images/lila_favicon.png')}}" />
+    <link rel="icon" type="image/png" href="{{ asset('frontend/assets/img/favcon/favicon.png')}}" />
     <link rel="canonical" href="{{ url()->current() }}" />
     @yield('canonical')
 
   <!-- Favicons -->
-  <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">
-  <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{ asset('frontend/assets/img/favcon/favicon.png')}}" rel="icon">
+  <link href="{{ asset('frontend/assets/img/favcon/favicon.png')}}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">

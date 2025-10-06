@@ -82,10 +82,28 @@
                             <span style="color:red"><small>{{ $message }}</small></span>
                             @enderror
                         </div>
-                        <div class="col-12">
+                        <div class="col-3">
+                            <select name="country_code" id="country_code" class="form-control" required>
+                                @foreach($countryCodes as $code)
+                                    <option value="{{$code->phone_code}}" @if($code->phone_code == '+91') selected @endif>{{$code->phone_code}}({{$code->country_name}})</option>
+                                @endforeach
+                            </select>
+                            @error('country_code')
+                            <span style="color:red"><small>{{ $message }}</small></span>
+                            @enderror
+                        </div>
+                        
+                        <div class="col-9">
                             
                             <input type="text" class="form-control" id="inputPhoneNumber" name="phone_no" value="{{old('phone_no')}}" placeholder="Enter Phone Number" required>
                             @error('phone_no')
+                            <span style="color:red"><small>{{ $message }}</small></span>
+                            @enderror
+                        </div>
+                        <div class="col-12">
+                            
+                            <input type="text" class="form-control" name="location" id="inputEmail4" value="{{old('location')}}" placeholder="Enter city" required>
+                            @error('location')
                             <span style="color:red"><small>{{ $message }}</small></span>
                             @enderror
                         </div>
@@ -97,13 +115,7 @@
                             @enderror
                         </div>
                         
-                        <div class="col-12">
-                            
-                            <input type="text" class="form-control" name="location" id="inputEmail4" value="{{old('location')}}" placeholder="Enter location" required>
-                            @error('location')
-                            <span style="color:red"><small>{{ $message }}</small></span>
-                            @enderror
-                        </div>
+                        
                         <div class="col-12">
                             <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" placeholder="Enter Your Message" required>{{old('message')}}</textarea>
                             @error('message')

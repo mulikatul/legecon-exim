@@ -9,19 +9,20 @@
           <span class="sitename">Legecon Exim</span>
         </a>
         <div class="footer-contact pt-3">
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Block No. 108, Building No. 9,</p>
+          <p> Lokmanya Nagar, Sadashiv Peth,</p>
+          <p>Pune - 411030 , Maharashtra, India</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+91 70208 93551</span></p>
+          <p><strong>Email:</strong> <span>+91 20 2999 1103</span></p>
         </div>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.home')}}">Home</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.about-us')}}">About us</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Product</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.product')}}">Product</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.contact-us')}}">Contact Us</a></li>
 
         </ul>

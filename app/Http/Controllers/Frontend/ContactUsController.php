@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Frontend\ContactUsFormRequest;
 use App\Models\ContactUs;
+use App\Models\CountryInfo;
 use App\Notifications\ContactUsNotificationToAdmin;
 use Illuminate\Http\Request;
 use Notification;
@@ -13,7 +14,8 @@ class ContactUsController extends Controller
 {
     public function index()
     {
-        return view('frontend.contact_us');
+        $countryCodes = CountryInfo::orderBy('country_name')->get();
+        return view('frontend.contact_us',compact('countryCodes'));
     }
     public function storeContactUs(ContactUsFormRequest $request)
     {
@@ -24,6 +26,7 @@ class ContactUsController extends Controller
         $contact->company = $request->company;
         $contact->location = $request->location;
         $contact->phone_no = $request->phone_no;
+        $contact->country_code = $request->country_code;
         $contact->message = $request->message;
         $contact->save();
 

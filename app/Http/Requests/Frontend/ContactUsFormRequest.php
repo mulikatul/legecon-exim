@@ -27,6 +27,7 @@ class ContactUsFormRequest extends FormRequest
             'company'           =>'required',
             'location'               => 'required',
             'phone_no'              => 'required',
+            'country_code'              => 'required',
             'message'               => 'required',
             'g-recaptcha-response'  => 'required|captcha',
         ];

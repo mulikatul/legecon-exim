@@ -20,7 +20,7 @@ Contact Us
                                     <th>Email</th>
                                     <th>Phone no</th>
                                     <th>Company</th>
-                                    <th>Location</th>
+                                    <th>City</th>
                                     <th>Message</th>
                                     <th>Date</th>
                                     <th>Action</th>
@@ -32,7 +32,7 @@ Contact Us
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$row->name}}</td>
                                         <td>{{$row->email}}</td>
-                                        <td>{{$row->phone_no}}</td>
+                                        <td>{{$row->country_code}} {{$row->phone_no}}</td>
                                         <td>{{$row->company}}</td>
                                         <td>{{$row->location}}</td>
                                         <td>
@@ -84,7 +84,7 @@ Contact Us
                                 <th>Email</th>
                                 <th>Phone no</th>
                                 <th>Company</th>
-                                <th>Location</th>
+                                <th>City</th>
                                 <th>Message</th>
                                 <th>Date</th>
                                 <th>Action</th>
