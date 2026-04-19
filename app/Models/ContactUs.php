@@ -11,9 +11,10 @@ class ContactUs extends Model
         'name',
         'email',
         'phone_no',
-        'location',
-        'message',
+        'product_description',
         'company',
-        'country_code'
+        'service_required',
+        'industry',
+        'company'
     ];
 }

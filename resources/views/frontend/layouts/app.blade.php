@@ -5,9 +5,7 @@
 
 <body class="index-page">
     @include('frontend.layouts.header')
-    <main class="main">
-        @yield('main-content')
-    </main>
+    @yield('main-content')
     @include('frontend.layouts.footer')
     @include('frontend.layouts.scripts')
 </body>

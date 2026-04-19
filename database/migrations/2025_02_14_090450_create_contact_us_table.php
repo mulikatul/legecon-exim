@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
+            $table->string('company');
             $table->string('phone_no')->nullable();
-            $table->longText('message');
+            $table->longText('product_description');
             $table->timestamps();
         });
     }

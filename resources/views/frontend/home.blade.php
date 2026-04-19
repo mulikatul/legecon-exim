@@ -2,821 +2,853 @@
 @section('title') Home Page @endsection
 @section('description') Home Page @endsection
 @section('main-content')
-<!-- Hero Section -->
-<section id="hero" class="hero section">
+<!-- ═══════════════════════════════
+     PAGE: HOME
+═══════════════════════════════ -->
+<div id="page-home" class="page pt active">
 
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up mb-2">Empowering Industries with Smart Automation Solutions</h1>
-                {{--<p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>--}}
-                <div class="d-flex flex-column flex-md-row mt-5" data-aos="fade-up" data-aos-delay="200">
-                    <a href="{{route('frontend.product')}}" class="btn-get-started">Business Verticles <i class="bi bi-arrow-right"></i></a>
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="container">
+            <div class="hero-inner">
+                <div>
+                    <div class="hero-badge"><span></span>ISO 9001:2015 Certified · Pune, India</div>
+                    <h1>
+                        Empowering Industry with<br>
+                        <span class="accent">Smart Automation</span>
+                    </h1>
+                    <p class="hero-sub">
+                        End-to-end industrial automation — EPC projects, IoT, SCADA, control panels, and turnkey engineering solutions. Delivered from Pune, India to clients worldwide.
+                    </p>
+                    <div class="hero-btns">
+                        <button class="btn-white" onclick="goto('products')">Explore Products →</button>
+                        <button class="btn-ghost-white" onclick="goto('contact')">Request a Quote</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero-card">
+                        <div class="hero-card-title">At a Glance</div>
+                        <div class="hero-stats-grid">
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">6<sup>+</sup></div>
+                                <div class="hero-stat-label">Industries Served</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">7</div>
+                                <div class="hero-stat-label">Product Lines</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">3</div>
+                                <div class="hero-stat-label">Global Partners</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-num">24<sup>/7</sup></div>
+                                <div class="hero-stat-label">Safe Operations</div>
+                            </div>
+                        </div>
+                        <div class="hero-tags">
+                            <span class="hero-tag">EPC Projects</span>
+                            <span class="hero-tag">Industrial IoT</span>
+                            <span class="hero-tag">SCADA</span>
+                            <span class="hero-tag">PLC</span>
+                            <span class="hero-tag">Control Panels</span>
+                            <span class="hero-tag">Turnkey</span>
+                        </div>
+                        <div class="hero-iso">
+                            <div class="hero-iso-badge">ISO</div>
+                            <span>9001:2015 Certified Quality Management</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                <img src="{{asset('frontend/assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
-            </div>
+        </div>
+    </section>
+
+    <!-- Services quick nav -->
+    <div class="services-bar">
+        <div class="services-bar-inner">
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">📡</span><span class="sbar-name">Industrial IoT 4.0</span></div>
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">⚡</span><span class="sbar-name">VFD Control Panels</span></div>
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">🤖</span><span class="sbar-name">PLC Control Panels</span></div>
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">🏗️</span><span class="sbar-name">MCC Panels</span></div>
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">📊</span><span class="sbar-name">APFC Panels</span></div>
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">🗄️</span><span class="sbar-name">PCC Panels</span></div>
+            <div class="sbar-item" onclick="goto('products')"><span class="sbar-icon">🔄</span><span class="sbar-name">Sync Panels</span></div>
         </div>
     </div>
 
-</section><!-- /Hero Section -->
+    <!-- Why choose us -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="eyebrow rv">Why Legecon</div>
+            <h2 class="headline-lg rv d1" style="margin-bottom:12px">Your Single-Point<br>Automation Partner</h2>
+            <p class="subtext rv d2" style="max-width:520px;margin-bottom:48px">From concept to commissioning, we manage every step so you don't have to worry about coordination, quality, or timelines.</p>
+            <div class="why-grid">
+                <div class="why-card rv">
+                    <div class="icon-box">🔧</div>
+                    <h4>Single-Point Solution</h4>
+                    <p>One partner handles everything — design, supply, panel manufacturing, programming, commissioning, and support.</p>
+                </div>
+                <div class="why-card rv d1">
+                    <div class="icon-box">⚙️</div>
+                    <h4>Engineering Excellence</h4>
+                    <p>Custom-engineered designs built around your exact operational requirements, focused on efficiency and cost-effectiveness.</p>
+                </div>
+                <div class="why-card rv d2">
+                    <div class="icon-box">🌐</div>
+                    <h4>Global Reach</h4>
+                    <p>We serve industries worldwide from our engineering base in Pune — with the agility of a local partner and the capability of a global firm.</p>
+                </div>
+                <div class="why-card rv d3">
+                    <div class="icon-box">🛡️</div>
+                    <h4>Reliable Support</h4>
+                    <p>Strong technical backing, on-time delivery, and long-term after-sales service you can count on for years after handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Stats Section -->
-<section id="stats" class="stats section">
+    <!-- Products preview -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px">
+                <div>
+                    <div class="eyebrow rv">Products</div>
+                    <h2 class="headline-lg rv d1">Our Product Range</h2>
+                </div>
+                <button class="btn btn-outline rv" onclick="goto('products')">View All Products →</button>
+            </div>
+            <div class="products-grid-home">
+                <div class="prod-mini rv" onclick="goto('products')">
+                    <div class="pm-icon">📡</div>
+                    <h4>Industrial IoT 4.0</h4>
+                    <p>Smart connected systems for real-time monitoring and control.</p>
+                </div>
+                <div class="prod-mini rv d1" onclick="goto('products')">
+                    <div class="pm-icon">⚡</div>
+                    <h4>VFD Control Panels</h4>
+                    <p>Precision motor speed control with energy savings.</p>
+                </div>
+                <div class="prod-mini rv d2" onclick="goto('products')">
+                    <div class="pm-icon">🤖</div>
+                    <h4>PLC Control Panels</h4>
+                    <p>Advanced logic control for any automation application.</p>
+                </div>
+                <div class="prod-mini rv d3" onclick="goto('products')">
+                    <div class="pm-icon">🏗️</div>
+                    <h4>MCC Panels</h4>
+                    <p>Centralized motor control for large installations.</p>
+                </div>
+                <div class="prod-mini rv d1" onclick="goto('products')">
+                    <div class="pm-icon">📊</div>
+                    <h4>APFC Panels</h4>
+                    <p>Automatic power factor correction for energy savings.</p>
+                </div>
+                <div class="prod-mini rv d2" onclick="goto('products')">
+                    <div class="pm-icon">🔄</div>
+                    <h4>Sync Panels</h4>
+                    <p>Generator and grid synchronization for power continuity.</p>
+                </div>
+                <div class="prod-mini rv d3" onclick="goto('products')">
+                    <div class="pm-icon">🗄️</div>
+                    <h4>PCC Panels</h4>
+                    <p>High-reliability power control and distribution centers.</p>
+                </div>
+                <div class="prod-mini rv d4" onclick="goto('contact')" style="background:var(--navy);border-color:var(--navy)">
+                    <div class="pm-icon" style="background:rgba(255,255,255,0.1)">💬</div>
+                    <h4 style="color:#fff">Need Something Custom?</h4>
+                    <p style="color:rgba(255,255,255,0.6)">Tell us your requirements — we design to spec.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 d-flex justify-content-evenly">
-
-            <div class="col-lg-3 col-md-6">
-                <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+    <!-- Industries -->
+    <section class="section bg-white">
+        <div class="container">
+            <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px">
+                <div>
+                    <div class="eyebrow rv">Sectors</div>
+                    <h2 class="headline-lg rv d1">Industries We Serve</h2>
+                </div>
+                <button class="btn btn-outline rv" onclick="goto('industries')">All Industries →</button>
+            </div>
+            <div class="industries-row">
+                <div class="ind-mini rv"><span class="ind-mini-icon">💧</span>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="{{$numbers->firstWhere('slug', 'happy_clients')['number']}}" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>{{$numbers->firstWhere('slug', 'happy_clients')['name']}}</p>
+                        <h4>Water & Wastewater</h4>
+                        <p>Treatment, pumping, and distribution control systems.</p>
                     </div>
                 </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-                <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-journal-richtext color-orange flex-shrink-0" style="color: #ee6c20;"></i>
+                <div class="ind-mini rv d1"><span class="ind-mini-icon">🍔</span>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="{{$numbers->firstWhere('slug', 'project')['number']}}" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>{{$numbers->firstWhere('slug', 'project')['name']}}</p>
+                        <h4>Food & Beverage</h4>
+                        <p>Hygienic automation for processing and packaging.</p>
                     </div>
                 </div>
-            </div><!-- End Stats Item -->
-
-            <!-- <div class="col-lg-3 col-md-6">
-                <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-headset color-green flex-shrink-0" style="color: #15be56;"></i>
+                <div class="ind-mini rv d2"><span class="ind-mini-icon">🛢️</span>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Hours Of Support</p>
+                        <h4>Oil & Gas / Energy</h4>
+                        <p>Robust control for upstream to downstream operations.</p>
                     </div>
                 </div>
-            </div>End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-                <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-people color-pink flex-shrink-0" style="color: #bb0852;"></i>
+                <div class="ind-mini rv d1"><span class="ind-mini-icon">🌡️</span>
                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="{{$numbers->firstWhere('slug', 'hard_worker')['number']}}" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>{{$numbers->firstWhere('slug', 'hard_worker')['name']}}</p>
+                        <h4>HVAC & Smart Buildings</h4>
+                        <p>Intelligent building automation and energy management.</p>
                     </div>
                 </div>
-            </div><!-- End Stats Item -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Stats Section -->
-
-<!-- Values Section -->
-<section id="values" class="values section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Our Values</h2>
-        <p>What we value most<br></p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-1.png')}}" class="img-fluid" alt="">
-                    <h3>Innovation</h3>
-                    <p>We continuously adapt and implement cutting-edge technologies to provide advanced automation solutions that keep our clients ahead of the competition.</p>
+                <div class="ind-mini rv d2"><span class="ind-mini-icon">🌿</span>
+                    <div>
+                        <h4>Sugar & Agriculture</h4>
+                        <p>Solar pumping and process automation for agriculture.</p>
+                    </div>
                 </div>
-            </div><!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-2.png')}}" class="img-fluid" alt="">
-                    <h3>Integrity</h3>
-                    <p>We believe in honest, transparent, and ethical business practices to build long-term trust with our customers and partners.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-3.png')}}" class="img-fluid" alt="">
-                    <h3>Customer - Centric Aproach</h3>
-                    <p>Every project is designed around the unique needs of our clients, ensuring tailor-made solutions that drive efficiency and success.</p>
-                </div>
-            </div><!-- End Card Item -->
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-1.png')}}" class="img-fluid" alt="">
-                    <h3>Excellence</h3>
-                    <p>We strive for excellence in everything we do—from product quality to project execution and after-sales support.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-2.png')}}" class="img-fluid" alt="">
-                    <h3>Sustainability</h3>
-                    <p>Our automation solutions are designed to optimize energy usage, reduce wastage, and support industries in achieving greener operations.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card">
-                    <img src="{{asset('frontend/assets/img/values-3.png')}}" class="img-fluid" alt="">
-                    <h3>Collaboration</h3>
-                    <p>Our automation solutions are designed to optimize energy usage, reduce wastage, and support industries in achieving greener operations.</p>
-                </div>
-            </div><!-- End Card Item -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Values Section -->
-
-
-{{--
-<!-- Features Section -->
-<section id="features" class="features section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Our Advacedd Features<br></p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-5">
-
-            <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-                <img src="{{asset('frontend/assets/img/features.png')}}" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-xl-6 d-flex">
-                <div class="row align-self-center gy-4">
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Eos aspernatur rem</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Facilis neque ipsa</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Volup amet volupt</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Rerum omnis sint</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Alias possimus</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Repellendus molli</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
+                <div class="ind-mini rv d3"><span class="ind-mini-icon">🧪</span>
+                    <div>
+                        <h4>Pharmaceutical</h4>
+                        <p>GMP-compliant process control for pharma plants.</p>
+                    </div>
                 </div>
             </div>
-
         </div>
+    </section>
 
+    <!-- Partners -->
+    <div class="partners-strip">
+        <div class="container">
+            <div class="partners-inner">
+                <span class="partners-label">Technology Partners</span>
+                <div class="partners-logos">
+                    <div class="partner-logo">
+                        <div class="pl-name">RealiteQ</div>
+                        <div class="pl-country">🇮🇱 Israel</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="pl-name">Emotron</div>
+                        <div class="pl-country">🇸🇪 Sweden</div>
+                    </div>
+                    <div class="partner-logo">
+                        <div class="pl-name">Selec</div>
+                        <div class="pl-country">🇮🇳 India</div>
+                    </div>
+                </div>
+                <button class="btn btn-outline" onclick="goto('about')">Learn More</button>
+            </div>
+        </div>
     </div>
 
-</section><!-- /Features Section -->--}}
-{{-- 
-<!-- Alt Features Section -->
-<section id="alt-features" class="alt-features section">
+    <!-- CTA -->
+    <div class="cta-band">
+        <div class="container">
+            <div class="cta-band-inner">
+                <h2>Ready to automate your<br><span>next project?</span></h2>
+                <div class="cta-band-btns">
+                    <button class="btn" style="background:#fff;color:var(--navy);font-weight:700" onclick="goto('contact')">Get a Free Quote →</button>
+                    <button class="btn btn-ghost-white" onclick="goto('services')">View Services</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="container">
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand-logo">
+                        <div class="footer-brand-icon">L</div>
+                        <div class="footer-brand-name">Lege<span>con</span> Exim Pvt. Ltd.</div>
+                    </div>
+                    <p class="footer-tagline">Empowering industries with smart automation. EPC Projects · IoT · SCADA · Control Panels · Turnkey Automation. Serving worldwide from Pune, India.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a onclick="goto('products')">IoT Solutions</a></li>
+                        <li><a onclick="goto('products')">VFD Panels</a></li>
+                        <li><a onclick="goto('products')">PLC Panels</a></li>
+                        <li><a onclick="goto('products')">MCC Panels</a></li>
+                        <li><a onclick="goto('products')">APFC Panels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a onclick="goto('services')">PLC Programming</a></li>
+                        <li><a onclick="goto('services')">SCADA Systems</a></li>
+                        <li><a onclick="goto('services')">HMI Design</a></li>
+                        <li><a onclick="goto('services')">Commissioning</a></li>
+                        <li><a onclick="goto('services')">Retrofitting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a onclick="goto('about')">About Us</a></li>
+                        <li><a onclick="goto('industries')">Industries</a></li>
+                        <li><a onclick="goto('contact')">Contact</a></li>
+                        <li><a href="https://www.legecon.com" target="_blank">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 <strong>Legecon Exim Pvt. Ltd.</strong> All rights reserved. Pune, Maharashtra, India.</p>
+                <p>Industrial Strength · Precision Control · Unmatched Reliability</p>
+            </div>
+        </div>
+    </footer>
+</div>
 
-        <div class="row gy-5">
+<!-- ═══════════════════════════════
+     PAGE: ABOUT
+═══════════════════════════════ -->
+<div id="page-about" class="page pt">
+    <div class="page-header">
+        <div class="container">
+            <div class="eyebrow rv">Who We Are</div>
+            <h1 class="headline-xl rv d1" style="margin-top:10px">About Legecon</h1>
+            <p class="subtext rv d2" style="max-width:580px;margin-top:14px">A trusted engineering partner delivering industrial automation solutions from Pune, India to clients worldwide.</p>
+        </div>
+    </div>
 
-            <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="row align-self-center gy-5">
-
-                    <div class="col-md-6 icon-box">
-                        <i class="bi bi-award"></i>
-                        <div>
-                            <h4>Corporis voluptates sit</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+    <section class="section bg-white">
+        <div class="container">
+            <div class="about-layout">
+                <div class="rv">
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-700);margin-bottom:20px">
+                        Legecon Exim Pvt. Ltd. specializes in <strong style="color:var(--navy)">high-performance industrial automation</strong>, electrical control systems, and energy-efficient solutions. We deliver reliable, customized systems engineered to meet the specific demands of industries, OEMs, and infrastructure projects.
+                    </p>
+                    <p class="subtext-sm" style="margin-bottom:20px">
+                        With deep technical expertise and hands-on site experience, we provide end-to-end support — from system design and panel manufacturing to PLC/SCADA development and long-term after-sales service.
+                    </p>
+                    <p class="subtext-sm">
+                        Our goal is simple: maximize your plant's productivity, optimize energy usage, and ensure 24/7 safe operations through advanced technology.
+                    </p>
+                    <div class="mission-card">
+                        <blockquote>"To deliver high-quality automation products and innovative engineering solutions that build long-term value and trust with our customers."</blockquote>
+                        <cite>— Core Mission, Legecon Exim Pvt. Ltd.</cite>
+                    </div>
+                </div>
+                <div>
+                    <div class="eyebrow rv">Why Partner With Us</div>
+                    <div class="why-list" style="margin-top:20px">
+                        <div class="why-row rv d1">
+                            <span class="wr-icon">🔧</span>
+                            <div class="wr-body">
+                                <h4>Single-Point Solution</h4>
+                                <p>We handle everything from design to commissioning — one partner, complete accountability, zero coordination headaches.</p>
+                            </div>
                         </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6 icon-box">
-                        <i class="bi bi-card-checklist"></i>
-                        <div>
-                            <h4>Ullamco laboris nisi</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <div class="why-row rv d2">
+                            <span class="wr-icon">⚙️</span>
+                            <div class="wr-body">
+                                <h4>Engineering Excellence</h4>
+                                <p>Customized designs built around your exact operational requirements, focused on efficiency and long-term cost savings.</p>
+                            </div>
                         </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6 icon-box">
-                        <i class="bi bi-dribbble"></i>
-                        <div>
-                            <h4>Labore consequatur</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                        <div class="why-row rv d3">
+                            <span class="wr-icon">🌐</span>
+                            <div class="wr-body">
+                                <h4>Global Reach</h4>
+                                <p>Serving industries worldwide from our engineering base in Pune — local knowledge, international standards.</p>
+                            </div>
                         </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6 icon-box">
-                        <i class="bi bi-filter-circle"></i>
-                        <div>
-                            <h4>Beatae veritatis</h4>
-                            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                        <div class="why-row rv d4">
+                            <span class="wr-icon">🛡️</span>
+                            <div class="wr-body">
+                                <h4>Reliable After-Sales Support</h4>
+                                <p>Strong technical backing and dedicated support long after project handover — your operations are always protected.</p>
+                            </div>
                         </div>
-                    </div><!-- End Feature Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="col-md-6 icon-box">
-                        <i class="bi bi-lightning-charge"></i>
-                        <div>
-                            <h4>Molestiae dolor</h4>
-                            <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
+    <div class="lifecycle-band section-sm">
+        <div class="container">
+            <div class="eyebrow rv">How We Work</div>
+            <h2 class="headline-lg rv d1" style="margin:10px 0 32px">The Legecon Lifecycle</h2>
+            <div class="lifecycle-steps rv d2">
+                <div class="lc-step">
+                    <div class="lc-num">01</div>
+                    <div class="lc-icon-wrap">💡</div>
+                    <div class="lc-name">Conceptualization</div>
+                </div>
+                <div class="lc-step">
+                    <div class="lc-num">02</div>
+                    <div class="lc-icon-wrap">📐</div>
+                    <div class="lc-name">Design</div>
+                </div>
+                <div class="lc-step">
+                    <div class="lc-num">03</div>
+                    <div class="lc-icon-wrap">🏭</div>
+                    <div class="lc-name">Panel Manufacturing</div>
+                </div>
+                <div class="lc-step">
+                    <div class="lc-num">04</div>
+                    <div class="lc-icon-wrap">💻</div>
+                    <div class="lc-name">Programming</div>
+                </div>
+                <div class="lc-step">
+                    <div class="lc-num">05</div>
+                    <div class="lc-icon-wrap">🔌</div>
+                    <div class="lc-name">Commissioning</div>
+                </div>
+                <div class="lc-step">
+                    <div class="lc-num">06</div>
+                    <div class="lc-icon-wrap">🎧</div>
+                    <div class="lc-name">After Sales Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:24px">
+                <p>© 2025 <strong>Legecon Exim Pvt. Ltd.</strong> — Pune, India</p><button class="btn btn-red" onclick="goto('contact')">Work With Us →</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: PRODUCTS
+═══════════════════════════════ -->
+<div id="page-products" class="page pt">
+    <div class="page-header">
+        <div class="container">
+            <div class="eyebrow rv">What We Build</div>
+            <h1 class="headline-xl rv d1" style="margin-top:10px">Our Product Range</h1>
+            <p class="subtext rv d2" style="max-width:540px;margin-top:14px">Seven precision-engineered product lines covering every aspect of industrial automation and power management.</p>
+        </div>
+    </div>
+
+    <section class="section bg-white">
+        <div class="container">
+            <div class="products-full-grid">
+                <div class="product-card iot-card rv">
+                    <div>
+                        <div class="pc-icon">📡</div>
+                    </div>
+                    <div>
+                        <span class="pc-num">01</span>
+                        <div class="tag" style="margin-bottom:10px">Industry 4.0</div>
+                        <h3>Industrial IoT 4.0 Solutions</h3>
+                        <p>Smart connected systems leveraging Industry 4.0 technologies for real-time monitoring, predictive maintenance, remote control, and data-driven operational insights across your entire facility.</p>
+                    </div>
+                </div>
+                <div class="product-card rv"><span class="pc-num">02</span>
+                    <div class="pc-icon">⚡</div>
+                    <h3>VFD Control Panels</h3>
+                    <p>Variable Frequency Drive panels engineered for precise motor speed control, significant energy savings, and extended equipment lifespan across all load types and environments.</p>
+                    <div class="tag" style="margin-top:12px">Drive Control</div>
+                </div>
+                <div class="product-card rv d1"><span class="pc-num">03</span>
+                    <div class="pc-icon">🔄</div>
+                    <h3>Synchronisation Panels</h3>
+                    <p>Generator and grid synchronization panels for seamless power management, load sharing, and uninterrupted supply in critical infrastructure and power-sensitive applications.</p>
+                    <div class="tag" style="margin-top:12px">Power Sync</div>
+                </div>
+                <div class="product-card rv d2"><span class="pc-num">04</span>
+                    <div class="pc-icon">🗄️</div>
+                    <h3>PCC Panels</h3>
+                    <p>Power Control Centers built for high reliability in main distribution, feeder control, and comprehensive protection of complex electrical systems in large facilities.</p>
+                    <div class="tag" style="margin-top:12px">Power Control</div>
+                </div>
+                <div class="product-card rv"><span class="pc-num">05</span>
+                    <div class="pc-icon">🤖</div>
+                    <h3>PLC Control Panels</h3>
+                    <p>Custom PLC panels with advanced logic for sequential, process, and safety automation. Compatible with Siemens, Allen Bradley, Mitsubishi, and all major PLC brands.</p>
+                    <div class="tag" style="margin-top:12px">PLC Automation</div>
+                </div>
+                <div class="product-card rv d1"><span class="pc-num">06</span>
+                    <div class="pc-icon">🏗️</div>
+                    <h3>MCC Panels</h3>
+                    <p>Motor Control Centers designed for centralized control, protection, and monitoring of multiple motors in large-scale industrial installations with reliability as the priority.</p>
+                    <div class="tag" style="margin-top:12px">Motor Control</div>
+                </div>
+                <div class="product-card rv d2"><span class="pc-num">07</span>
+                    <div class="pc-icon">📊</div>
+                    <h3>APFC Panels</h3>
+                    <p>Automatic Power Factor Correction panels to eliminate reactive power penalties, reduce electricity bills, and improve overall power quality at your facility continuously.</p>
+                    <div class="tag" style="margin-top:12px">Energy Efficiency</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:24px">
+                <p>© 2025 <strong>Legecon Exim Pvt. Ltd.</strong></p><button class="btn btn-red" onclick="goto('contact')">Request a Quote →</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: SERVICES
+═══════════════════════════════ -->
+<div id="page-services" class="page pt">
+    <div class="page-header">
+        <div class="container">
+            <div class="eyebrow rv">Engineering Services</div>
+            <h1 class="headline-xl rv d1" style="margin-top:10px">Automation Services</h1>
+            <p class="subtext rv d2" style="max-width:540px;margin-top:14px">From PLC programming to full turnkey project delivery — we provide every engineering service your automation project needs.</p>
+        </div>
+    </div>
+
+    <section class="section bg-white">
+        <div class="container">
+            <div class="services-tabs-wrap">
+                <div class="services-tab-list">
+                    <div class="svc-tab active" onclick="switchSvc(this,'sp-plc')"><span class="st-icon">🤖</span><span class="st-name">PLC Programming</span><span class="st-num">01</span></div>
+                    <div class="svc-tab" onclick="switchSvc(this,'sp-hmi')"><span class="st-icon">🖥️</span><span class="st-name">HMI Design</span><span class="st-num">02</span></div>
+                    <div class="svc-tab" onclick="switchSvc(this,'sp-scada')"><span class="st-icon">📊</span><span class="st-name">SCADA Development</span><span class="st-num">03</span></div>
+                    <div class="svc-tab" onclick="switchSvc(this,'sp-int')"><span class="st-icon">🔗</span><span class="st-name">System Integration</span><span class="st-num">04</span></div>
+                    <div class="svc-tab" onclick="switchSvc(this,'sp-comm')"><span class="st-icon">✅</span><span class="st-name">Testing & Commissioning</span><span class="st-num">05</span></div>
+                    <div class="svc-tab" onclick="switchSvc(this,'sp-retro')"><span class="st-icon">🔄</span><span class="st-name">Retrofitting & Upgrades</span><span class="st-num">06</span></div>
+                </div>
+                <div>
+                    <div id="sp-plc" class="svc-panel active">
+                        <div class="tag">PLC / Logic Control</div>
+                        <h3>PLC Programming & Logic Development</h3>
+                        <p class="subtext">Expert development of PLC programs using IEC 61131-3 languages for any application complexity — from simple sequences to complex safety systems.</p>
+                        <div class="svc-bullets">
+                            <div class="svc-bullet">Custom logic for sequential, process, and safety control</div>
+                            <div class="svc-bullet">Safety PLC programming (SIL 1, SIL 2, SIL 3)</div>
+                            <div class="svc-bullet">Multi-brand: Siemens, Allen Bradley, Mitsubishi, Schneider</div>
+                            <div class="svc-bullet">Fault diagnostics, alarm management and reporting</div>
+                            <div class="svc-bullet">Remote access and predictive maintenance programming</div>
                         </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6 icon-box">
-                        <i class="bi bi-patch-check"></i>
-                        <div>
-                            <h4>Explicabo consectetur</h4>
-                            <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Siemens S7-1500</span><span class="tech-pill">Allen Bradley</span><span class="tech-pill">Mitsubishi FX</span><span class="tech-pill">Schneider Modicon</span><span class="tech-pill">CODESYS</span>
                         </div>
-                    </div><!-- End Feature Item -->
+                    </div>
+                    <div id="sp-hmi" class="svc-panel">
+                        <div class="tag">HMI / Visualization</div>
+                        <h3>HMI Design & Configuration</h3>
+                        <p class="subtext">Intuitive, operator-friendly interfaces designed for clarity and reliability — giving operators full visibility and control over their processes at a glance.</p>
+                        <div class="svc-bullets">
+                            <div class="svc-bullet">Custom process mimics and graphical displays</div>
+                            <div class="svc-bullet">Alarm management, event logging and trending</div>
+                            <div class="svc-bullet">Multi-language and multi-user configurations</div>
+                            <div class="svc-bullet">Touchscreen, panel-mounted and web-based HMI</div>
+                            <div class="svc-bullet">Historical data reporting and analysis dashboards</div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill">WinCC</span><span class="tech-pill">FactoryTalk View</span><span class="tech-pill">Weintek</span><span class="tech-pill">Beijer</span><span class="tech-pill">Proface</span>
+                        </div>
+                    </div>
+                    <div id="sp-scada" class="svc-panel">
+                        <div class="tag">SCADA</div>
+                        <h3>SCADA System Development</h3>
+                        <p class="subtext">Comprehensive SCADA solutions for plant-wide supervisory control, real-time data acquisition, and enterprise-level integration with full IoT connectivity.</p>
+                        <div class="svc-bullets">
+                            <div class="svc-bullet">Plant-wide monitoring, supervisory control and historian</div>
+                            <div class="svc-bullet">KPI dashboards and production reporting</div>
+                            <div class="svc-bullet">Remote monitoring via web and mobile applications</div>
+                            <div class="svc-bullet">OPC-UA and MQTT integration for IoT connectivity</div>
+                            <div class="svc-bullet">Integration with ERP/MES systems (SAP, Oracle)</div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Ignition</span><span class="tech-pill">WinCC SCADA</span><span class="tech-pill">Wonderware</span><span class="tech-pill">AVEVA</span><span class="tech-pill">OPC-UA</span><span class="tech-pill">MQTT</span>
+                        </div>
+                    </div>
+                    <div id="sp-int" class="svc-panel">
+                        <div class="tag">Integration</div>
+                        <h3>System Integration</h3>
+                        <p class="subtext">Seamless integration of PLCs, HMIs, SCADA, ERP, MES, and third-party systems — creating a unified, intelligent plant environment with no data silos.</p>
+                        <div class="svc-bullets">
+                            <div class="svc-bullet">PLC-to-SCADA and PLC-to-HMI integration</div>
+                            <div class="svc-bullet">ERP/MES connectivity (SAP, Oracle, Microsoft)</div>
+                            <div class="svc-bullet">Industrial protocol bridging and conversion</div>
+                            <div class="svc-bullet">Legacy system integration and migration services</div>
+                            <div class="svc-bullet">Cloud platform integration (AWS IoT, Azure IoT)</div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Modbus RTU/TCP</span><span class="tech-pill">PROFIBUS</span><span class="tech-pill">PROFINET</span><span class="tech-pill">EtherNet/IP</span><span class="tech-pill">DeviceNet</span>
+                        </div>
+                    </div>
+                    <div id="sp-comm" class="svc-panel">
+                        <div class="tag">Commissioning</div>
+                        <h3>Testing & Commissioning</h3>
+                        <p class="subtext">Rigorous Factory Acceptance Testing, Site Acceptance Testing, and live commissioning support to ensure every system performs exactly as designed from day one.</p>
+                        <div class="svc-bullets">
+                            <div class="svc-bullet">FAT and SAT documentation and on-site execution</div>
+                            <div class="svc-bullet">Loop checking, instrument calibration and verification</div>
+                            <div class="svc-bullet">Pre-commissioning checks and punch-list resolution</div>
+                            <div class="svc-bullet">Performance testing, tuning and optimization</div>
+                            <div class="svc-bullet">Operator training and full documentation handover</div>
+                        </div>
+                    </div>
+                    <div id="sp-retro" class="svc-panel">
+                        <div class="tag">Modernization</div>
+                        <h3>Retrofitting & Automation Upgrades</h3>
+                        <p class="subtext">Transform aging systems into modern, reliable automation platforms — maximizing the return on existing assets with minimal downtime and disruption.</p>
+                        <div class="svc-bullets">
+                            <div class="svc-bullet">Legacy PLC migration and modernization programs</div>
+                            <div class="svc-bullet">Panel retrofit with minimal production disruption</div>
+                            <div class="svc-bullet">Addition of IoT sensors and connectivity layers</div>
+                            <div class="svc-bullet">Energy efficiency upgrades with VFD integration</div>
+                            <div class="svc-bullet">Obsolete component replacement and sourcing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="turnkey-card rv">
+                <div>
+                    <h3>Turnkey Automation Solutions</h3>
+                    <p>We handle complete automation projects end-to-end — design, supply, installation, programming, commissioning, and ongoing support. One partner. Total accountability. Guaranteed delivery.</p>
+                </div>
+                <button class="btn btn-red" onclick="goto('contact')" style="flex-shrink:0;white-space:nowrap">Start a Project →</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:24px">
+                <p>© 2025 <strong>Legecon Exim Pvt. Ltd.</strong></p><button class="btn btn-red" onclick="goto('contact')">Get a Quote →</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: INDUSTRIES
+═══════════════════════════════ -->
+<div id="page-industries" class="page pt">
+    <div class="page-header">
+        <div class="container">
+            <div class="eyebrow rv">Sectors We Serve</div>
+            <h1 class="headline-xl rv d1" style="margin-top:10px">Industries We Serve</h1>
+            <p class="subtext rv d2" style="max-width:560px;margin-top:14px">Our automation solutions are deployed across the most demanding industrial environments — from water treatment plants to pharmaceutical manufacturing.</p>
+        </div>
+    </div>
+
+    <section class="section bg-white">
+        <div class="container">
+            <div class="industries-full-grid">
+                <div class="ind-card-full rv">
+                    <div class="ind-header">
+                        <div class="ind-icon-lg">💧</div>
+                        <h3>Water & Wastewater Management</h3>
+                    </div>
+                    <p>Automated treatment, pumping, and distribution control systems for municipal and industrial water management facilities — ensuring regulatory compliance and operational efficiency.</p>
+                    <div class="ind-tags"><span class="ind-tag">Water Treatment</span><span class="ind-tag">SCADA Monitoring</span><span class="ind-tag">Remote Control</span><span class="ind-tag">Pump Automation</span></div>
+                </div>
+                <div class="ind-card-full rv d1">
+                    <div class="ind-header">
+                        <div class="ind-icon-lg">🍔</div>
+                        <h3>Food & Beverage Processing</h3>
+                    </div>
+                    <p>Hygienic automation designed for food-grade processing, packaging, and quality control — meeting international food safety standards while maximizing throughput and minimizing waste.</p>
+                    <div class="ind-tags"><span class="ind-tag">GMP Compliance</span><span class="ind-tag">Batch Control</span><span class="ind-tag">CIP Systems</span><span class="ind-tag">Quality Tracking</span></div>
+                </div>
+                <div class="ind-card-full rv">
+                    <div class="ind-header">
+                        <div class="ind-icon-lg">🛢️</div>
+                        <h3>Oil & Gas / Energy</h3>
+                    </div>
+                    <p>Robust control systems for upstream, midstream, and downstream operations in hazardous environments — built for maximum reliability, safety, and uptime in demanding conditions.</p>
+                    <div class="ind-tags"><span class="ind-tag">ATEX Compliance</span><span class="ind-tag">Safety PLCs</span><span class="ind-tag">Pipeline Control</span><span class="ind-tag">Emergency Shutdown</span></div>
+                </div>
+                <div class="ind-card-full rv d1">
+                    <div class="ind-header">
+                        <div class="ind-icon-lg">🌡️</div>
+                        <h3>HVAC & Smart Building Automation</h3>
+                    </div>
+                    <p>Intelligent building management systems for climate control, energy management, and occupant comfort — dramatically reducing energy costs while improving building performance.</p>
+                    <div class="ind-tags"><span class="ind-tag">BMS Integration</span><span class="ind-tag">Energy Management</span><span class="ind-tag">Smart Controls</span><span class="ind-tag">HVAC Automation</span></div>
+                </div>
+                <div class="ind-card-full rv">
+                    <div class="ind-header">
+                        <div class="ind-icon-lg">🌿</div>
+                        <h3>Sugar & Agriculture (Solar Pumping)</h3>
+                    </div>
+                    <p>Specialized automation for sugar processing and solar-powered agricultural pumping systems — bringing precision control and renewable energy to rural and agricultural operations.</p>
+                    <div class="ind-tags"><span class="ind-tag">Solar VFD</span><span class="ind-tag">Irrigation Control</span><span class="ind-tag">Process Automation</span><span class="ind-tag">Energy Savings</span></div>
+                </div>
+                <div class="ind-card-full rv d1">
+                    <div class="ind-header">
+                        <div class="ind-icon-lg">🧪</div>
+                        <h3>Pharmaceutical & Chemical Plants</h3>
+                    </div>
+                    <p>GMP-compliant automation for critical process control in pharmaceutical and chemical manufacturing — ensuring batch integrity, full traceability, and strict regulatory compliance.</p>
+                    <div class="ind-tags"><span class="ind-tag">GMP Compliance</span><span class="ind-tag">21 CFR Part 11</span><span class="ind-tag">Batch Records</span><span class="ind-tag">Process Control</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:24px">
+                <p>© 2025 <strong>Legecon Exim Pvt. Ltd.</strong></p><button class="btn btn-red" onclick="goto('contact')">Discuss Your Project →</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: CONTACT
+═══════════════════════════════ -->
+<div id="page-contact" class="page pt">
+    <div class="page-header">
+        <div class="container">
+            <div class="eyebrow rv">Get In Touch</div>
+            <h1 class="headline-xl rv d1" style="margin-top:10px">Let's Work Together</h1>
+            <p class="subtext rv d2" style="max-width:500px;margin-top:14px">Share your project requirements and our engineering team will respond within 24 hours with a tailored proposal.</p>
+        </div>
+    </div>
+
+    <section class="section bg-white">
+        <div class="container">
+            <div class="contact-layout">
+
+                <div class="rv">
+                    <div class="contact-details">
+                        <div class="cd-row">
+                            <div class="cd-icon-wrap">📍</div>
+                            <div>
+                                <div class="cd-label">Office Address</div>
+                                <div class="cd-value">Block No. 108, Building No. 9,<br>Lokmanya Nagar, Sadashiv Peth,<br>Pune 411030, Maharashtra, India</div>
+                            </div>
+                        </div>
+                        <div class="cd-row">
+                            <div class="cd-icon-wrap">📞</div>
+                            <div>
+                                <div class="cd-label">Phone</div>
+                                <div class="cd-value">
+                                    <a href="tel:+917020893551">+91 70208 93551</a><br>
+                                    <a href="tel:+917720023099">+91 77200 23099</a><br>
+                                    <a href="tel:+912029991103">+91 20 2999 1103</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cd-row">
+                            <div class="cd-icon-wrap">✉️</div>
+                            <div>
+                                <div class="cd-label">Email</div>
+                                <div class="cd-value"><a href="mailto:legeconeximpvtltd@gmail.com">legeconeximpvtltd@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="cd-row">
+                            <div class="cd-icon-wrap">🌐</div>
+                            <div>
+                                <div class="cd-label">Website</div>
+                                <div class="cd-value"><a href="https://www.legecon.com" target="_blank">www.legecon.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="iso-box">
+                        <div class="iso-badge">ISO</div>
+                        <div class="iso-text"><strong>ISO 9001:2015 Certified</strong>Quality Management System — ensuring consistent, high-quality delivery on every project.</div>
+                    </div>
+
+                    <div class="contact-partners" style="margin-top:28px">
+                        <h4>Technology Partners</h4>
+                        <div class="cp-list">
+                            <div class="cp-item"><span style="font-size:20px">🇮🇱</span><span class="cp-name">RealiteQ</span><span class="cp-country">Israel</span></div>
+                            <div class="cp-item"><span style="font-size:20px">🇸🇪</span><span class="cp-name">Emotron</span><span class="cp-country">Sweden</span></div>
+                            <div class="cp-item"><span style="font-size:20px">🇮🇳</span><span class="cp-name">Selec</span><span class="cp-country">India</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card rv d2">
+                    <div class="cf-title">Send an Inquiry</div>
+                    <div class="cf-sub">Our team will get back to you within 24 business hours.</div>
+                    <form action="{{route('frontend.store-contact-us')}}" method="post" class="php-email-form" >
+                        @csrf
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-input" name="name" id="inputFirstName" value="{{old('name')}}" placeholder="Enter Name" required>
+                                @error('name')
+                                    <span style="color:red"><small>{{ $message }}</small></span>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Company *</label>
+                                <input type="text" class="form-input" name="company" id="inputEmail4" value="{{old('company')}}" placeholder="Enter company" required>
+                                @error('company')
+                                    <span style="color:red"><small>{{ $message }}</small></span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-input" name="email" id="inputEmail4" value="{{old('email')}}" placeholder="Enter Email" required>
+                                @error('email')
+                                    <span style="color:red"><small>{{ $message }}</small></span>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-input" id="inputPhoneNumber" name="phone_no" value="{{old('phone_no')}}" placeholder="Enter Phone Number" required>
+                                @error('phone_no')
+                                    <span style="color:red"><small>{{ $message }}</small></span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Industry</label>
+                            <select class="form-select" name="industry">
+                                <option>Water & Wastewater Management</option>
+                                <option>Food & Beverage Processing</option>
+                                <option>Oil & Gas / Energy</option>
+                                <option>HVAC & Smart Building</option>
+                                <option>Sugar & Agriculture</option>
+                                <option>Pharmaceutical & Chemical</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Service Required</label>
+                            <select class="form-select" name="service_required">
+                                <option>PLC Programming & Logic Development</option>
+                                <option>HMI Design & Configuration</option>
+                                <option>SCADA System Development</option>
+                                <option>Control Panel Manufacturing</option>
+                                <option>Industrial IoT Solutions</option>
+                                <option>Turnkey Automation Project</option>
+                                <option>Retrofitting & Upgrades</option>
+                                <option>System Integration</option>
+                                <option>Testing & Commissioning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Project Description *</label>
+                            <textarea class="form-textarea" name="product_description" placeholder="Describe your project, requirements, timelines, and any relevant specifications..."></textarea>
+                        </div>
+                        <div class="col-12" id="RecaptchaField2">
+                            {!! NoCaptcha::renderJs() !!}
+                            {!! NoCaptcha::display() !!}
+                            @error('g-recaptcha-response')
+                            <span style="color:red"><small>{{ $message }}</small></span>
+                            @enderror
+                        </div>
+                        <div class="form-footer">
+                            <button class="btn btn-red" id="submit-btn" type="submit">Send Inquiry →</button>
+                            <p class="form-note">We respond within 24 business hours.<br>All inquiries are kept confidential.</p>
+                        </div>
+                    </form>
                 </div>
 
             </div>
-
-            <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
-                <img src="{{asset('frontend/assets/img/alt-features.png')}}" class="img-fluid" alt="">
-            </div>
-
         </div>
+    </section>
 
-    </div>
+@include('sweetalert::alert') 
 
-</section><!-- /Alt Features Section -->
---}}
-<!-- Services Section -->
-<section id="services" class="services section">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Our Services<br></p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item item-cyan position-relative">
-                    <i class="bi bi-diagram-3 icon"></i>
-                    <h3>Turnkey Automation Projects</h3>
-                    <p>Complete project execution from concept, design, and engineering to installation, commissioning, and support.</p>
-                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item item-orange position-relative">
-                    <i class="bi bi-broadcast icon"></i>
-                    <h3>SCADA System Development</h3>
-                    <p>Custom Web-SCADA and centralized monitoring solutions for real-time data visualization, control, and reporting.</p>
-                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item item-teal position-relative">
-                    <i class="bi bi-pc-display icon"></i>
-                    <h3>PLC & HMI Programming</h3>
-                    <p>Design and programming of PLCs and HMIs tailored to your processes for seamless automation and control.</p>
-                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item item-red position-relative">
-                    <i class="bi bi-bar-chart-line icon"></i>
-                    <h3>IIoT Integration</h3>
-                    <p>Smart Industrial IoT integration, remote monitoring, predictive maintenance, and digital twin modeling.</p>
-                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item item-indigo position-relative">
-                    <i class="bi bi-lightning-charge icon"></i>
-                    <h3>VFD & Motor Control Solutions</h3>
-                    <p>Supply, installation, and maintenance of high-performance VFD drives, soft starters, and shaft power monitors.</p>
-                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div class="service-item item-pink position-relative">
-                    <i class="bi bi-tools icon"></i>
-                    <h3>Maintenance & Support</h3>
-                    <p>Reliable after-sales support, system upgrades, troubleshooting, and training to ensure smooth operations.</p>
-                    <!-- <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-                </div>
-            </div><!-- End Service Item -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Services Section -->
-
-
-
-<!-- Faq Section -->
-<section id="faq" class="faq section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>F.A.Q</h2>
-        <p>Frequently Asked Questions</p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="faq-container">
-
-                    <div class="faq-item faq-active">
-                        <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                        <div class="faq-content">
-                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                        <div class="faq-content">
-                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                        <div class="faq-content">
-                            <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                </div>
-
-            </div><!-- End Faq Column-->
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="faq-container">
-
-                    <div class="faq-item">
-                        <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                        <div class="faq-content">
-                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                        <div class="faq-content">
-                            <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                        <div class="faq-content">
-                            <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                </div>
-
-            </div><!-- End Faq Column-->
-
-        </div>
-
-    </div>
-
-</section><!-- /Faq Section -->
-{{--
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Check our latest work</p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Product</li>
-                <li data-filter=".filter-branding">Branding</li>
-                <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters -->
-
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/app-1.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/product-1.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 1</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/branding-1.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 1</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/books-1.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Books 1</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/app-2.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/product-2.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 2</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/branding-2.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 2</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/books-2.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Books 2</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/app-3.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/product-3.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Product 3</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/branding-3.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Branding 3</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                        <img src="{{asset('frontend/assets/img/portfolio/books-3.jpg')}}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Books 3</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                            <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-            </div><!-- End Portfolio Container -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Portfolio Section -->--}}
-
-@if(count($testimonials)>0)
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>What they are saying about us<br></p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-                {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                        "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                        "el": ".swiper-pagination",
-                        "type": "bullets",
-                        "clickable": true
-                    },
-                    "breakpoints": {
-                        "320": {
-                            "slidesPerView": 1,
-                            "spaceBetween": 40
-                        },
-                        "1200": {
-                            "slidesPerView": 3,
-                            "spaceBetween": 1
-                        }
-                    }
-                }
-            </script>
-            <div class="swiper-wrapper">
-                @foreach($testimonials as $testimonial)
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            {{$testimonial->description}}
-                        </p>
-                        <div class="profile mt-auto">
-                            <!-- <img src="{{asset('frontend/assets/img/testimonials/testimonials-1.jpg')}}" class="testimonial-img" alt=""> -->
-                            <h3>{{$testimonial->client_name}}</h3>
-                            <h4>{{$testimonial->company_name}}</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-                @endforeach
-                {{--
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{asset('frontend/assets/img/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
-                            <h3>Sara Wilsson</h3>
-                            <h4>Designer</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{asset('frontend/assets/img/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
-                            <h3>Jena Karlis</h3>
-                            <h4>Store Owner</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{asset('frontend/assets/img/testimonials/testimonials-4.jpg')}}" class="testimonial-img" alt="">
-                            <h3>Matt Brandon</h3>
-                            <h4>Freelancer</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{asset('frontend/assets/img/testimonials/testimonials-5.jpg')}}" class="testimonial-img" alt="">
-                            <h3>John Larson</h3>
-                            <h4>Entrepreneur</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->--}}
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-    </div>
-
-</section><!-- /Testimonials Section -->
-@endif
-
-
-@if(count($clients)>0)
-<!-- Clients Section -->
-<section id="clients" class="clients section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Clients</h2>
-        <p>We work with best clients<br></p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-                {
-                    "loop": false,
-                    "speed": 600,
-                    "autoplay": {
-                        "delay": 5000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                        "el": ".swiper-pagination",
-                        "type": "bullets",
-                        "clickable": true
-                    },
-                    "breakpoints": {
-                        "320": {
-                            "slidesPerView": 2,
-                            "spaceBetween": 40
-                        },
-                        "480": {
-                            "slidesPerView": 3,
-                            "spaceBetween": 60
-                        },
-                        "640": {
-                            "slidesPerView": 4,
-                            "spaceBetween": 80
-                        },
-                        "992": {
-                            "slidesPerView": 6,
-                            "spaceBetween": 120
-                        }
-                    }
-                }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-                @foreach($clients as $client)
-                    <div class="swiper-slide"><img src="{{asset($client->logo_image)}}" class="img-fluid" alt="{{$client->alt_text}}"></div>
-                @endforeach
-                    <!-- <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-3.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-4.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-5.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-6.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-7.png')}}" class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="{{asset('frontend/assets/img/clients/client-8.png')}}" class="img-fluid" alt=""></div> -->
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-    </div>
-
-</section><!-- /Clients Section -->
-@endif
-
-
-@endsection
+    @endsection

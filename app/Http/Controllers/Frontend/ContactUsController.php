@@ -24,10 +24,10 @@ class ContactUsController extends Controller
         $contact->name = $request->name;
         $contact->email = $request->email;
         $contact->company = $request->company;
-        $contact->location = $request->location;
         $contact->phone_no = $request->phone_no;
-        $contact->country_code = $request->country_code;
-        $contact->message = $request->message;
+        $contact->industry = $request->industry;
+        $contact->service_required = $request->service_required;
+        $contact->product_description = $request->product_description;
         $contact->save();
 
         Notification::route('mail', config( 'constants.mail.contactUsNotificationToAdmin' ))->notify(new ContactUsNotificationToAdmin($request->all())); 

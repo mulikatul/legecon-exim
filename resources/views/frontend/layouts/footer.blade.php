@@ -1,70 +1,14 @@
-<footer id="footer" class="footer">
-
-
-
-  <div class="container footer-top">
-    <div class="row gy-4">
-      <div class="col-lg-4 col-md-6 footer-about">
-        <a href="index.html" class="d-flex align-items-center">
-          <span class="sitename">Legecon Exim</span>
-        </a>
-        <div class="footer-contact pt-3">
-          <p>Block No. 108, Building No. 9,</p>
-          <p> Lokmanya Nagar, Sadashiv Peth,</p>
-          <p>Pune - 411030 , Maharashtra, India</p>
-          <p class="mt-3"><strong>Phone:</strong> <span>+91 70208 93551</span></p>
-          <p><strong>Email:</strong> <span>+91 20 2999 1103</span></p>
+<footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo"><div class="footer-brand-icon">L</div><div class="footer-brand-name">Lege<span>con</span> Exim Pvt. Ltd.</div></div>
+          <p class="footer-tagline">Empowering industries with smart automation. Serving worldwide from Pune, India.</p>
         </div>
+        <div class="footer-col"><h5>Navigation</h5><ul><li><a onclick="goto('home')">Home</a></li><li><a onclick="goto('about')">About</a></li><li><a onclick="goto('products')">Products</a></li><li><a onclick="goto('services')">Services</a></li><li><a onclick="goto('industries')">Industries</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:+917020893551">+91 70208 93551</a></li><li><a href="mailto:legeconeximpvtltd@gmail.com">Email Us</a></li><li><a href="https://www.legecon.com" target="_blank">legecon.com</a></li></ul></div>
+        <div class="footer-col"><h5>Certifications</h5><ul><li><a href="#">ISO 9001:2015</a></li></ul></div>
       </div>
-
-      <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Useful Links</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.home')}}">Home</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.about-us')}}">About us</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.product')}}">Product</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.contact-us')}}">Contact Us</a></li>
-
-        </ul>
-      </div>
-
-      <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Other Links</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.privacy-policy')}}">Privacy Policy</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{route('frontend.sitemap')}}">SiteMap</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-4 col-md-12">
-        <h4>Follow Us</h4>
-        <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
-        <div class="social-links d-flex">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-
+      <div class="footer-bottom"><p>&copy; {{ \Carbon\Carbon::now()->year }}<strong>Legecon Exim Pvt. Ltd.</strong> All rights reserved. Pune, Maharashtra, India.</p><p>Industrial Strength · Precision Control · Unmatched Reliability</p></div>
     </div>
-  </div>
-
-  <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">Legecon Exim</strong> <span>All Rights Reserved</span></p>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you've purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-    </div>
-  </div>
-  <div class="cookie-container">
-    <p style="line-height: 2;">
-      We use cookies on this site to enhance your user experience.
-      By continuing to visit this site you agree to our use of cookies.
-      <a href="{{route('frontend.privacy-policy')}}" target="_blank" style="text-decoration: underline;color: white;">View Our Privacy Policy</a> <button class="cookie-btn">Got it</button>
-    </p>
-  </div>
 </footer>

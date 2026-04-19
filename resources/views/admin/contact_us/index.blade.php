@@ -20,8 +20,9 @@ Contact Us
                                     <th>Email</th>
                                     <th>Phone no</th>
                                     <th>Company</th>
-                                    <th>City</th>
-                                    <th>Message</th>
+                                    <th>Industry</th>
+                                    <th>Service Required</th>
+                                    <th>Product Description</th>
                                     <th>Date</th>
                                     <th>Action</th>
                                 </tr>
@@ -34,7 +35,8 @@ Contact Us
                                         <td>{{$row->email}}</td>
                                         <td>{{$row->country_code}} {{$row->phone_no}}</td>
                                         <td>{{$row->company}}</td>
-                                        <td>{{$row->location}}</td>
+                                        <td>{{$row->industry}}</td>
+                                        <td>{{$row->service_required}}</td>
                                         <td>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg-{{$row->id}}">
                                                 View
@@ -43,12 +45,12 @@ Contact Us
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title">Message</h4>
+                                                            <h4 class="modal-title">Product Description</h4>
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="row">
-                                                                <label class="control-label col-sm-4" for="name">Message:</label>
-                                                                <div class="col-sm-8">{{  $row->message }}</div>
+                                                                <label class="control-label col-sm-4" for="name">Product Description:</label>
+                                                                <div class="col-sm-8">{{  $row->product_description }}</div>
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer justify-content-between">
@@ -84,8 +86,9 @@ Contact Us
                                 <th>Email</th>
                                 <th>Phone no</th>
                                 <th>Company</th>
-                                <th>City</th>
-                                <th>Message</th>
+                                <th>Industry</th>
+                                <th>Service Required</th>
+                                <th>Product Description</th>
                                 <th>Date</th>
                                 <th>Action</th>
                             </tfoot>
